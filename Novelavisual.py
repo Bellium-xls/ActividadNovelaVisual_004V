@@ -1,61 +1,83 @@
-nombre = input("Antes de comenzar, ingrese su nombre de usuario")
-print(nombre)
-print(f"Bienvenido {nombre}, estabamos esperando tu llegada al gremio")
-
+print("Bienvenido aventurer@, ¿Estarás listo para el camino que te espera?")
+nombre = input("¿Cuál es tu nombre? ")
+print(f"Oh, con que {nombre}, sin duda un nombre para un heroe.")
+print("¿Qué clase de aventurer@ quieres ser?")
 Caballero = 1
 Mago = 2
-Paladín = 3
-Asesino = 4
-Prisionero = 5
-
-print("1)Caballero  2)Mago  3)Paladín   4)Asesino   5)Prisionero")
-clase = int(input("¿Que clase escogeras para tu aventura?"))
+Asesino = 3
+Arquero = 4
+clase = int(input("1) Caballero, 2) Mago, 3) Asesino, 4) Arquero"))
 if clase == 1:
-    print("Haz escogido la clase Caballero, tus estadisticas son:")
-    print("HP: 100")
-    print("ATK: 60")
-    print("PODER MÁGICO: 0")
-    print("DEFENSA: 75")
+    print("Has escogido ser un caballero, tus estadisticas son las siguientes: ")
+    print("Vida: 100")
+    print("Fuerza: 10")
+    print("Defensa : 8")
+    print("Agilidad: 5")
+    print("Magia: 0")
 elif clase == 2:
-    print("Haz escogido la clase Mago, tus estadisticas son:")
-    print("HP: 90")
-    print("ATK: 10")
-    print("PODER MÁGICO: 70")
-    print("DEFENSA: 50")
+    print("Has escogido ser un mago, tus estadisticas son las siguientes: ")
+    print("Vida: 70")
+    print("Fuerza: 3")
+    print("Defensa : 4")
+    print("Agilidad: 6")
+    print("Magia: 10")
 elif clase == 3:
-    print("Haz escogido la clase Paladín, tus estadisticas son:")
-    print("HP: 80")
-    print("ATK: 45")
-    print("PODER MÁGICO: 10")
-    print("DEFENSA: 150")
-elif clase == 4:
-    print("Haz escogido la clase Asesino, tus estadisticas son:")
-    print("HP: 70")
-    print("ATK: 100")
-    print("PODER MÁGICO: 40")
-    print("DEFENSA: 30")
+    print("Has escogido ser un asesino, tus estadisticas son las siguientes: ")
+    print("Vida: 80")
+    print("Fuerza: 15")
+    print("Defensa : 5")
+    print("Agilidad: 10")
+    print("Magia: 0")
 else:
-    print("Haz escogido ser un Prisionero, Dios se apiade de tu aventura.")
-    print("HP: 100")
-    print("ATK: 10")
-    print("PODER MÁGICO: 10")
-    print("DEFENSA: 10")
+    print("Has escogido ser un arquero, tus estadisticas son las siguientes: ")
+    print("Vida: 90")
+    print("Fuerza: 8")
+    print("Defensa : 6")
+    print("Agilidad: 12")
+    print("Magia: 5")
 
-print("Ahora que ya has escogido tu clase, es hora de comenzar tu aventura")
-print(f"{nombre} se adentra en una mazmorra en ruinas.")
-print("El viento aulla, el frío te hace sentir intranquilo y la oscuridad es tu único compañero.")
-print("1)Te armas de valor y entras en la mazmorra  2)Tal vez para otro momento.    3) Padre nuestro y con fé entras a la mazmorra")
-decision = int(input("¿Que haras?"))
-if decision == 1:
-    print("La mazmorra aparentemente no está vacía, hay sangre fresca entre las lugubres paredes.")
-    print(f"Escuchas un estruendo y te pones en alerta, {nombre} se prepara para lo que pueda venir.")
-    print("Aparece una criatura grotesca, no parece producir ningún sonido, es rápido pero aparentemente es débil")
+print("Ya decisite que clase de aventurer@ quieres ser, ahora es momento de elegir tu primera ruta, ¿Qué camino quieres tomar?")
+Bosque = 1
+Montaña = 2
+Cueva = 3
+Ruta = int(input("1) Bosque, 2) Montaña, 3) Cueva"))
+if Ruta == 1:
+    print("Has elegido el bosque, puede ser tranquilo durante el día, pero se precavid@ en la noche, el peligro acecha en cada esquina.")
+    print("Mientras caminas cerca de los arboles, sientes una presencia detras de ti, te das la vuelta y es un Golem, una criatura bastante resistente.")
+    print("¡Rápido!, escoge tu acción: ")
+    print("1) Atacar, 2) Defender, 3) Huir")
     Atacar = 1
-    Huir = 2
-    Defender = 3
-    print("1)No es rival para ti.  2)Me da miedo.  3)Puedo con esto.")
-    accion = int(input("¿Qué harás?"))
-    if 
+    Defender = 2
+    Huir = 3
+    accion = int(input("¿Qué acción quieres realizar? "))
+    if accion == 1:
+        print("Decidiste atacar al Golem, tu destreza y fuerza son increibles, terminas derrotando al Golem en segundos")
+    elif accion == 2:
+        print("Decidiste defenderte y esperar a lograr un contraataque")
+        print("No te esperabas la rapidez y fuerza del Golem, recibes el golpe pero logras lanzar un contraataque, ganas el combate con dificultad")
+    else:
+        print("Decidiste huir del Golem, consideras que es una perdida de tiempo enfrentarlo")
+    
+    print("Sigues tu camino por el bosque y te percatas de un escandalo, te decides acercar.")
+    print("De lo poco que puedes ver entre los arbustos, aparentemente es un grupo de siete bandidos y también al parecer una entidad elfica")
+    print("Decides intervenir, pero primero piensas como: ")
+    print("1) Atacar de frente, 2) Planear un asalto, 3) Probar la negociación")
+    Atacar = 1
+    Planear = 2
+    Negociar = 3
+    accion = int(input("¿Qué acción quieres realizar? "))
+    if accion == 1:
+        print("Decidiste atacar de frente contra los siete bandidos, son habiles pero no más que tú")
+        print("Tras una ardua pelea, logras vencer pero con varias heridas y apuñaladas")
+    elif accion == 2:
+        print("Te ocultas entre las gruesas ramas de los arboles y embistes a dos bandidos que estaban separados del grupo")
+        print("Consecutivamente obliteras a otros tres y quedas contra los ultimos dos de frente")
+        print("Tus habilidades de combate llegan a ser superiores a manos desnudas y logras derrotar al grupo de bandidos")
+    else:
+        print("Decides probar la negociación, pero te obligan a entregar tus pertenencias y todo lo de valor en tu posesión.")
+        print("")
+elif Ruta == 2:
+    print("Has elegido la montaña, el camino es difícil y peligroso, pero las vistas son impresionantes, ten cuidado con los acantilados.")
+else:
+    print("Has elegido la cueva, es un lugar oscuro y húmedo, lleno de misterios y peligros, asegúrate de llevar una antorcha.")
 
-
-elif decision == 2:
