@@ -1,3 +1,4 @@
+import time
 print("Bienvenido aventurer@, ¿Estarás listo para el camino que te espera?")
 nombre = input("¿Cuál es tu nombre? ")
 print(f"Oh, con que {nombre}, sin duda un nombre para un heroe.")
@@ -35,7 +36,7 @@ else:
     print("Defensa : 6")
     print("Agilidad: 12")
     print("Magia: 5")
-
+time.sleep(1)
 print("Ya decisite que clase de aventurer@ quieres ser, ahora es momento de elegir tu primera ruta, ¿Qué camino quieres tomar?")
 Bosque = 1
 Montaña = 2
