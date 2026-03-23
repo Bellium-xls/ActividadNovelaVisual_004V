@@ -177,31 +177,38 @@ else:
         print("Abres el cofre y en un párpadeo estas en la entrada de la cueva, pero con una espada reluciente.")
         print("Felicidades, en tu aventura has conseguir la famosa espada Excalibur.")
         print("Despúes de tu exitosa expedición regresas al gremio de aventureros para reclamar tu recompensa, te aguardan más aventuras por delante.")
+        entrada = False
     else:
         print("Decides que es mejor buscar una manera para salir de la cueva y empiezas a explorar.")
         print("Guiandote con las piedras relucientes de las estrechas paredes de la cueva, logras encontrar otra sala pero hay algo raro.")
         print("Ves que hay muchos más cadaveres que en la sala anterior, te preparas para un encuentro si es el caso.")
         print("De repente se escucha un estruendo desde el final de la sala y es una hidra enorme.")
         print("No sabes si la podrás derrotar, es un gran riesgo.")
-        Atacar = 1
-        Atacar2 = 2
-        accion = int(input("1) Atacar, 2) NO tienes otra opción."))
-        if accion == 1:
-            print("Decides ir de frente contra la hidra, la hidra se percata de tu presencia y se lanza contra ti.")
-            print("Luego de varios minutos peleando contra la hidra, estas agotado y con varias heridas graves, crees que tu final está cerca.")
-            print("La hidra decidida a matarte con su último ataque, simplemente esperas a que llegue tu final.")
-            print("¿¿¡¡¡QUE ES ESO!!!???")
-            print("En un instante aparece una luz frente a ti y se imbuye en tu cuerpo, cambiando la forma de tu arma y potenciandola a gran escala.")
-            print("Sientes una cálidez en todas las partes de tu cuerpo, y una fuerza inconmensurable, decides dar inicio a la muerte de la hidra.")
-            print("De un solo ataque logras cercenar varias cabezas de la hidra, te sientes en confianza de lograr derrotarla.")
-            print("Luego de una hora de batalla contra la hidra logras vencerla, entre sus entrañas ves algo cegador.")
-            print("Te acercas y metes tu mano para recoger aquel objeto, es un anillo con un rubí incrustado, debe valer una fortuna.")
-            print("Te lo pones por curiosidad, al mismo momento piensas en volver al gremio de aventureros.")
-            print("Al instante te encuentras en el mismisimo gremio, te das cuenta del poder del anillo pero decides que es mejor venderlo.")
-            print(f"Has completado tu primera expedición con éxito, felicidades {nombre}.")
-        else:
-            print("Te preparas con miedo contra la hidra.")
-            print("Tus manos están sudando, escuchas tu corazón latir, tiemblas y estas demasiado asustado.")
-            print("La hidra sabe que estas con miedo, y se lanza contra ti despedazandote en el acto.")
-            print("Pudiste haber tenido un mejor resultado si hubieras tenido más confianza.")
+        entrada = True
+        while entrada :
+            Atacar = 1
+            Atacar2 = 2
+            accion = int(input("1) Atacar, 2) NO tienes otra opción."))
+            if accion == 1:
+                print("Decides ir de frente contra la hidra, la hidra se percata de tu presencia y se lanza contra ti.")
+                print("Luego de varios minutos peleando contra la hidra, estas agotado y con varias heridas graves, crees que tu final está cerca.")
+                print("La hidra decidida a matarte con su último ataque, simplemente esperas a que llegue tu final.")
+                print("¿¿¡¡¡QUE ES ESO!!!???")
+                print("En un instante aparece una luz frente a ti y se imbuye en tu cuerpo, cambiando la forma de tu arma y potenciandola a gran escala.")
+                print("Sientes una cálidez en todas las partes de tu cuerpo, y una fuerza inconmensurable, decides dar inicio a la muerte de la hidra.")
+                print("De un solo ataque logras cercenar varias cabezas de la hidra, te sientes en confianza de lograr derrotarla.")
+                print("Luego de una hora de batalla contra la hidra logras vencerla, entre sus entrañas ves algo cegador.")
+                print("Te acercas y metes tu mano para recoger aquel objeto, es un anillo con un rubí incrustado, debe valer una fortuna.")
+                print("Te lo pones por curiosidad, al mismo momento piensas en volver al gremio de aventureros.")
+                print("Al instante te encuentras en el mismisimo gremio, te das cuenta del poder del anillo pero decides que es mejor venderlo.")
+                print(f"Has completado tu primera expedición con éxito, felicidades {nombre}.")
+                entrada = False
+            elif accion == 2:
+                print("Te preparas con miedo contra la hidra.")
+                print("Tus manos están sudando, escuchas tu corazón latir, tiemblas y estas demasiado asustado.")
+                print("La hidra sabe que estas con miedo, y se lanza contra ti despedazandote en el acto.")
+                print("Pudiste haber tenido un mejor resultado si hubieras tenido más confianza.")
+                entrada = False
+            else:
+                print("Escoge.")
 print("Gracias por jugar, espero que hayas disfrutado tu aventura, hasta la próxima.")
