@@ -204,4 +204,5 @@ else:
             print("Tus manos están sudando, escuchas tu corazón latir, tiemblas y estas demasiado asustado.")
             print("La hidra sabe que estas con miedo, y se lanza contra ti despedazandote en el acto.")
             print("Pudiste haber tenido un mejor resultado si hubieras tenido más confianza.")
+        
 print("Gracias por jugar, espero que hayas disfrutado tu aventura, hasta la próxima.")
