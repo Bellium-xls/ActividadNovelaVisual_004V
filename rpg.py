@@ -40,4 +40,26 @@ while True:
         opcion_2 == 2
         print("llegas a la siguiente puerta a mano izquierda")
         break
-    
+print("al abrir la puerta ves un salón enorme")
+print("las paredes están cubiertas de relojes, todos marcando horas distintas")
+print(f"{nombre}: ¿qué significa todo esto?")
+print("en el centro hay un espejo antiguo, con tu reflejo mirándote fijamente")
+print("pero tu reflejo sonríe... y te habla")
+
+print(f"{nombre}: ¡¿qué está pasando?!")
+print("reflejo: 'Has cruzado el pasillo del tiempo. Cada puerta era un destino posible.'")
+print("reflejo: 'Ahora debes elegir: quedarte atrapado en un recuerdo... o seguir adelante.'")
+
+while True:
+    print("1. Romper el espejo\n2. Aceptar tu reflejo y entrar en él")
+    decision = int(input("¿Qué harás ahora?:"))
+    if decision == 1:
+        print("rompes el espejo... la oscuridad te envuelve")
+        print("cuando abres los ojos, despiertas en tu cama. ¿Fue todo un sueño?")
+        break
+    elif decision == 2:
+        print("tocas el espejo y tu reflejo te absorbe")
+        print("te conviertes en parte del pasillo eterno, guardián de las puertas del tiempo")
+        print("tu historia termina... pero el pasillo sigue esperando nuevos aventureros")
+        break
+
